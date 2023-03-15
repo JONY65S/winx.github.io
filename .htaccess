@@ -1,0 +1,15 @@
+ErrorDocument 404 https://laboratoriosistemas.cuautitlan2.unam.mx/congresowinx/.WinxCongreso/404.php
+ErrorDocument 403 https://laboratoriosistemas.cuautitlan2.unam.mx/congresowinx/.WinxCongreso/403.php
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+# Activar RewriteEngine
+RewriteEngine on
+RewriteBase /congresowinx/WinxCongreso/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+RewriteRule ^(.*)$ $1.php
+
+</IfModule>

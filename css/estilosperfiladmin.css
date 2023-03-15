@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+    background: #333333;
+}
+
+#btn-menu{
+  display: none;
+
+}
+
+header label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: lpx solid #fff;
+}
+
+header label:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+
+.baner{
+  width:  100%;
+}
+
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+
+}
+
+.menu li{
+  text-align: center;
+  flex-grow: 1;
+}
+
+.menu li:hover {
+    background:  rgb(135, 110, 19); 
+}
+
+.menu li a{
+  display:  block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+img.alineadoicono{
+  vertical-align: middle;
+}
+
+
+@media (max-width: 768px){
+  header label{
+    display: block;
+  } 
+  .menu {
+    position: absolute;
+    background:  #333333;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li{
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~.menu {
+    margin: 0;
+  }
+
+
+}
+
+
+   
+    #btn-menu2{
+      display: none;
+    }
+    .menu2 ul{
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+    
+    .menu2 li{
+      text-align: center;
+      flex-grow: 1;
+    }
+    
+    .menu2 li:hover {
+        background:  rgb(135, 110, 19); 
+    }
+    
+    .menu2 li a{
+      display:  block;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+    img.alineadoicono{
+      vertical-align: middle;
+    }
+    
+    @media (max-width: 768px){
+      header label{
+        display: block;
+      } 
+      .menu2 {
+        position: absolute;
+        background:  #333333;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+      }
+      .menu2 ul {
+        flex-direction: column;
+      }
+      .menu2 li{
+        border-top: 1px solid #fff;
+      }
+      #btn-menu2:checked ~.menu2 {
+        margin: 0;
+      }
+    }
+    
+    
